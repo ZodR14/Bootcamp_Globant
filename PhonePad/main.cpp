@@ -15,12 +15,9 @@ int main() {
 		Node* nodeFound = Dictionary::SearchWord(userInput);//Search
 
 		if (nodeFound != nullptr) {							//If we found a node...
-			std::cout << "Word(s) found: " << std::endl;
 			nodeFound->PrintWords();						//print all the words for that number
 		}
-		else {
-			std::cout << "No matching word found!" << std::endl;
-		}
+		
 
 		std::cout << "Press 1 to continue" << std::endl;
 		std::cin >> cont;

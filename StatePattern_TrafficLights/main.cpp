@@ -2,6 +2,16 @@
 #include "YellowLight.h"
 #include <iostream>
 #include <string>
+
+/*
+cool numbers to try:
+22737
+729
+2273
+2787433
+*/
+
+
 int main() {
 	TrafficLight semaforo;
 	int input, conti;

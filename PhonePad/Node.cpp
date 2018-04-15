@@ -25,8 +25,14 @@ Node* Node::AddNextNode(const char& num) {
 }
 
 void Node::PrintWords() const {
-	for (int i = 0; i < words.size(); ++i) {
-		std::cout << words[i] << std::endl;
+	if (words.size() > 0) {
+		std::cout << "Word(s) found: " << std::endl;
+		for (int i = 0; i < words.size(); ++i) {
+			std::cout << words[i] << std::endl;
+		}
+	}
+	else {
+		std::cout << "No matching word found!" << std::endl;
 	}
 }
 
